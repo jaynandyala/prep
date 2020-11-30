@@ -16,7 +16,6 @@ function findTargetWhile(arr, sumToFind){
         let pairingNumToFind = sumToFind - arr[currentIteration];
             let elementIndex = arr.indexOf(pairingNumToFind);
             if(elementIndex != -1 && elementIndex != currentIteration){
-                result = [arr[currentIteration],pairingNumToFind]
                 valueFound =true;
             }
           if(valueFound){
@@ -32,7 +31,7 @@ let targetSum1 = 8;
 
 findTargetWhile(inputArr1, targetSum1);
 
-const  inputArr2 = [1,11,25,32,99,86,14];
+const  inputArr2 = [1,1,25,32,99,86,14];
 let targetSum2 = 100;
 
 findTargetWhile(inputArr2, targetSum2);
